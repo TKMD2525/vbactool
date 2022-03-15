@@ -36,18 +36,21 @@ def importvba():
     print("\nインポートを実行します。\n")
     subprocess.call('cscript //nologo vbac.wsf combine', shell=True)
 
+def main():
+    # 自分の相対パス取得
+    path = os.path.dirname(__file__)
 
-# 自分の相対パス取得
-path = os.path.dirname(__file__)
+    # 自分のファイルパスにcd
+    os.chdir(path)
 
-# 自分のファイルパスにcd
-os.chdir(path)
+    # 確認dir
+    subprocess.call('dir', shell=True)
 
-# 確認dir
-subprocess.call('dir', shell=True)
+    # インポート
+    importvba()
 
-# インポート
-importvba()
+    # pause
+    os.system("pause")
 
-# pause
-os.system("pause")
+if __name__ == "__main__"():
+    main()
