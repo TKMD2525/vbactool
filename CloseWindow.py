@@ -140,7 +140,7 @@ class Strategy(CloseWindow):
 
         return True
 
-
-if __name__ == "__main__":
-    obj = Strategy()
-    obj()
+#テストコード
+#if __name__ == "__main__":
+#    obj = Strategy()
+#    obj()
