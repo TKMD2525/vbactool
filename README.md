@@ -16,7 +16,7 @@ projectFolder
 
 ・export.py
 binファイルに入っているxlsmファイルのbas、dcmファイルをエクスポートする
-エクスポートはブックを開いていたも可能
+エクスポートはブックを開いていても可能
 
 ・import.py
 bas、dcmファイルをbookファイルにインポートする
